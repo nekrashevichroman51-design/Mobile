@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Роман Некрашевич — Разработчик сайтов / PHONIC CORE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ========================================== -->
+    <!-- РАЗДЕЛ 1: ОСНОВНОЙ САЙТ (ПОИСКОВИК GOOGLE) -->
+    <!-- ========================================== -->
+    <div id="google-portfolio-page">
+        <!-- ВЕРХНЯЯ ПАНЕЛЬ: Логотип, поиск и переключатель темы -->
+        <header class="google-top-bar">
+            <div class="google-logo" id="logo">
+                <span class="g-blue">G</span>
+                <span class="g-red">o</span>
+                <span class="g-yellow">o</span>
+                <span class="g-blue">g</span>
+                <span class="g-green">l</span>
+                <span class="g-red">e</span>
+            </div>
+            
+            <div class="search-box-wrapper">
+                <div class="search-box">
+                    <div class="search-icon">🔍</div>
+                    <input type="text" id="search-input" readonly>
+                    <div class="mic-icon">🎙️</div>
+                </div>
+                
+                <div class="search-buttons" id="buttons-panel">
+                    <button class="btn" id="search-btn">Поиск</button>
+                    <button class="btn" id="lucky-btn">Мне повезёт!</button>
+                </div>
+            </div>
+
+            <!-- Переключатель темы -->
+            <button id="theme-toggle" class="theme-btn" title="Переключить тему">🌓</button>
+        </header>
+
+        <!-- НИЖНЯЯ ЧАСТЬ: 3 колонки -->
+        <div class="main-content-layout">
+            
+            <!-- КОЛОНКА 1: Детальные навыки и контакты Романа (Слева) -->
+            <aside class="sidebar-left">
+                <div class="card-section">
+                    <h2>Технические навыки</h2>
+                    
+                    <div class="skill-category">
+                        <h3>Frontend Core</h3>
+                        <ul class="skills-list">
+                            <li><strong>HTML5 / CSS3:</strong> Семантическая верстка, Flexbox, Grid.</li>
+                            <li><strong>JavaScript (ES6+):</strong> DOM, асинхронный код, события.</li>
+                            <li><strong>Адаптивность:</strong> Mobile First, кроссбраузерность.</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Дизайн & UI/UX инструменты</h3>
+                        <ul class="skills-list design-skills">
+                            <li><strong>Figma:</strong> Компоненты, UI-киты, стили, адаптивные сетки, подготовка макетов к верстке.</li>
+                            <li><strong>Графика:</strong> Базовый Photoshop / Illustrator, экспорт SVG/растра, дизайн интерфейсов.</li>
+                            <li><strong>Интерфейсы:</strong> Понимание адаптивного веб-дизайна, композиции и типографики.</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Инструменты</h3>
+                        <ul class="skills-list">
+                            <li><strong>Контроль версий:</strong> Git & GitHub.</li>
+                            <li><strong>Сборка:</strong> NPM, базовый Vite / Webpack.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card-section">
+                    <h2>Contacts</h2>
+                    <ul class="contacts-list">
+                        <li><strong>Telegram:</strong> <a href="https://t.me" target="_blank">@RV11111111</a></li>
+                        <li><strong>Email:</strong> <a href="mailto:Nekrashevichroman51@gmail.com">Nekrashevichroman51@gmail.com</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- КОЛОНКА 2: Выдача проектов (Центр) -->
+            <main class="google-results-container">
+                <div class="search-placeholder" id="search-placeholder">
+                    <p>Нажмите <strong>«Поиск»</strong> или клавишу <strong>Enter</strong>, чтобы увидеть список разработанных проектов Романа Викторовича.</p>
+                </div>
+
+                <div class="results-wrapper" id="results-wrapper">
+                    <p class="search-stats">Результатов: примерно 4 (за 0.22 сек)</p>
+                    
+                    <div class="search-result-item">
+                        <span class="result-url">https://github.com</span>
+                        <a href="#" class="result-title">Интерактивный список задач (To-Do App) на JavaScript</a>
+                        <p class="result-snippet">Адаптивное приложение для планирования задач. Динамическое добавление, удаление и фильтрация элементов, сохранение данных в LocalStorage.</p>
+                    </div>
+
+                    <!-- ИНТЕГРИРОВАННАЯ ДЕМО-ССЫЛКА НА ИНТЕРНЕТ-МАГАЗИН -->
+                    <div class="search-result-item">
+                        <span class="result-url">https://nekrashevich.core</span>
+                        <a href="#" class="result-title" id="open-shop-link">💥 Премиум интернет-магазин смартфонов "PHONIC CORE" [Смотреть демо]</a>
+                        <p class="result-snippet">Коммерческий проект с глубоким неоновым дизайном в стиле Cyber-Luxury. Реализована интерактивная 3D-смена моделей, анимированная корзина и живой подсчет стоимости заказа.</p>
+                    </div>
+
+                    <div class="search-result-item">
+                        <span class="result-url">https://github.com</span>
+                        <a href="#" class="result-title">Веб-калькулятор со сложными математическими функциями</a>
+                        <p class="result-snippet">Интерфейс калькулятора. Демонстрация работы с обработчиками событий JS, валидацией строк и алгоритмами вычислений.</p>
+                    </div>
+
+                    <div class="search-result-item">
+                        <span class="result-url">https://github.com</span>
+                        <a href="#" class="result-title">Каталог кинофильмов с динамическим поиском и фильтрами</a>
+                        <p class="result-snippet">Фронтенд-проект с рендерингом данных из JSON-массива. Реализована "живая" строка поиска без перезагрузки всей страницы.</p>
+                    </div>
+                </div>
+            </main>
+
+            <!-- КОЛОНКА 3: Кибер-терминал (Справа) -->
+            <aside class="sidebar-right">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">roman_nekrashevich_core.sh</span>
+                    </div>
+                    <div class="terminal-body" id="terminal-content"></div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- РАЗДЕЛ 2: ИНТЕРНЕТ-МАГАЗИН (СКРЫТ ДО КЛИКА) -->
+    <!-- ========================================== -->
+    <div id="phone-shop-page" style="display: none;">
+        <!-- Кнопка возврата в Google -->
+        <button id="back-to-portfolio" class="back-btn">← Вернуться в Портфолио (Google)</button>
+
+        <!-- Шапка магазина -->
+        <header class="navbar-shop">
+            <div class="shop-logo">PHONIC<span>.</span>CORE</div>
+            <nav class="nav-links-shop">
+                <a href="#" class="active">Каталог</a>
+                <a href="#">Технологии</a>
+                <a href="#">Кастомизация</a>
+            </nav>
+            <div class="nav-actions-shop">
+                <div class="cart-icon" id="cart-trigger">
+                    🛒 <span id="cart-counter">0</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Главный интерактивный баннер -->
+        <section class="hero-section-shop">
+            <div class="hero-text-shop">
+                <span class="shop-badge">Новое поколение — 2026</span>
+                <h1 id="hero-title-shop">Cyber X-Pro</h1>
+                <p id="hero-description-shop">Титановый корпус с молекулярным напылением, квантовый чип нейросетей Core-Q1 и дисплей без границ Infinite AMOLED 144Hz.</p>
+                <div class="price-row-shop">
+                    <span class="current-price-shop" id="hero-price-shop">99 900 ₽</span>
+                    <span class="old-price-shop">124 900 ₽</span>
+                </div>
+                <div class="cta-buttons-shop">
+                    <button class="btn-primary-shop" id="hero-buy-btn">Купить сейчас</button>
+                </div>
+            </div>
+            
+            <div class="hero-visual-shop">
+                <div class="glow-orb-shop" id="visual-glow"></div>
+                <div class="phone-frame-3d" id="main-phone-view">
+                    <div class="screen-content">
+                        <div class="wallpaper-art" id="phone-wallpaper"></div>
+                        <div class="camera-notch"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Витрина смартфонов -->
+        <section class="products-section-shop">
+            <h2 class="section-title-shop">Выберите свой флагман</h2>
+            <div class="products-grid-shop">
+                
+                <div class="product-card-shop" data-name="Cyber X-Pro" data-price="99900" data-color="#39ff14" data-desc="Титановый корпус с молекулярным напылением, квантовый чип нейросетей Core-Q1 и дисплей без границ Infinite AMOLED 144Hz.">
