@@ -12,7 +12,6 @@
     <!-- РАЗДЕЛ 1: ОСНОВНОЙ САЙТ (ПОИСКОВИК GOOGLE) -->
     <!-- ========================================== -->
     <div id="google-portfolio-page">
-        <!-- ВЕРХНЯЯ ПАНЕЛЬ: Логотип, поиск и переключатель темы -->
         <header class="google-top-bar">
             <div class="google-logo" id="logo">
                 <span class="g-blue">G</span>
@@ -22,32 +21,25 @@
                 <span class="g-green">l</span>
                 <span class="g-red">e</span>
             </div>
-            
             <div class="search-box-wrapper">
                 <div class="search-box">
                     <div class="search-icon">🔍</div>
                     <input type="text" id="search-input" readonly>
                     <div class="mic-icon">🎙️</div>
                 </div>
-                
                 <div class="search-buttons" id="buttons-panel">
                     <button class="btn" id="search-btn">Поиск</button>
                     <button class="btn" id="lucky-btn">Мне повезёт!</button>
                 </div>
             </div>
-
-            <!-- Переключатель темы -->
             <button id="theme-toggle" class="theme-btn" title="Переключить тему">🌓</button>
         </header>
 
-        <!-- НИЖНЯЯ ЧАСТЬ: 3 колонки -->
         <div class="main-content-layout">
-            
-            <!-- КОЛОНКА 1: Детальные навыки и контакты Романа (Слева) -->
+            <!-- КОЛОНКА 1: Навыки и контакты Романа (Слева) -->
             <aside class="sidebar-left">
                 <div class="card-section">
                     <h2>Технические навыки</h2>
-                    
                     <div class="skill-category">
                         <h3>Frontend Core</h3>
                         <ul class="skills-list">
@@ -56,7 +48,6 @@
                             <li><strong>Адаптивность:</strong> Mobile First, кроссбраузерность.</li>
                         </ul>
                     </div>
-
                     <div class="skill-category">
                         <h3>Дизайн & UI/UX инструменты</h3>
                         <ul class="skills-list design-skills">
@@ -65,7 +56,6 @@
                             <li><strong>Интерфейсы:</strong> Понимание адаптивного веб-дизайна, композиции и типографики.</li>
                         </ul>
                     </div>
-
                     <div class="skill-category">
                         <h3>Инструменты</h3>
                         <ul class="skills-list">
@@ -74,44 +64,36 @@
                         </ul>
                     </div>
                 </div>
-                
                 <div class="card-section">
-                    <h2>Contacts</h2>
+                    <h2>Контакты</h2>
                     <ul class="contacts-list">
                         <li><strong>Telegram:</strong> <a href="https://t.me" target="_blank">@RV11111111</a></li>
                         <li><strong>Email:</strong> <a href="mailto:Nekrashevichroman51@gmail.com">Nekrashevichroman51@gmail.com</a></li>
                     </ul>
                 </div>
             </aside>
-
             <!-- КОЛОНКА 2: Выдача проектов (Центр) -->
             <main class="google-results-container">
                 <div class="search-placeholder" id="search-placeholder">
                     <p>Нажмите <strong>«Поиск»</strong> или клавишу <strong>Enter</strong>, чтобы увидеть список разработанных проектов Романа Викторовича.</p>
                 </div>
-
                 <div class="results-wrapper" id="results-wrapper">
                     <p class="search-stats">Результатов: примерно 4 (за 0.22 сек)</p>
-                    
                     <div class="search-result-item">
                         <span class="result-url">https://github.com</span>
                         <a href="#" class="result-title">Интерактивный список задач (To-Do App) на JavaScript</a>
                         <p class="result-snippet">Адаптивное приложение для планирования задач. Динамическое добавление, удаление и фильтрация элементов, сохранение данных в LocalStorage.</p>
                     </div>
-
-                    <!-- ИНТЕГРИРОВАННАЯ ДЕМО-ССЫЛКА НА ИНТЕРНЕТ-МАГАЗИН -->
                     <div class="search-result-item">
                         <span class="result-url">https://nekrashevich.core</span>
                         <a href="#" class="result-title" id="open-shop-link">💥 Премиум интернет-магазин смартфонов "PHONIC CORE" [Смотреть демо]</a>
                         <p class="result-snippet">Коммерческий проект с глубоким неоновым дизайном в стиле Cyber-Luxury. Реализована интерактивная 3D-смена моделей, анимированная корзина и живой подсчет стоимости заказа.</p>
                     </div>
-
                     <div class="search-result-item">
                         <span class="result-url">https://github.com</span>
                         <a href="#" class="result-title">Веб-калькулятор со сложными математическими функциями</a>
                         <p class="result-snippet">Интерфейс калькулятора. Демонстрация работы с обработчиками событий JS, валидацией строк и алгоритмами вычислений.</p>
                     </div>
-
                     <div class="search-result-item">
                         <span class="result-url">https://github.com</span>
                         <a href="#" class="result-title">Каталог кинофильмов с динамическим поиском и фильтрами</a>
@@ -134,16 +116,12 @@
             </aside>
         </div>
     </div>
-
-
     <!-- ========================================== -->
     <!-- РАЗДЕЛ 2: ИНТЕРНЕТ-МАГАЗИН (СКРЫТ ДО КЛИКА) -->
     <!-- ========================================== -->
     <div id="phone-shop-page" style="display: none;">
-        <!-- Кнопка возврата в Google -->
         <button id="back-to-portfolio" class="back-btn">← Вернуться в Портфолио (Google)</button>
 
-        <!-- Шапка магазина -->
         <header class="navbar-shop">
             <div class="shop-logo">PHONIC<span>.</span>CORE</div>
             <nav class="nav-links-shop">
@@ -158,7 +136,6 @@
             </div>
         </header>
 
-        <!-- Главный интерактивный баннер -->
         <section class="hero-section-shop">
             <div class="hero-text-shop">
                 <span class="shop-badge">Новое поколение — 2026</span>
@@ -172,7 +149,6 @@
                     <button class="btn-primary-shop" id="hero-buy-btn">Купить сейчас</button>
                 </div>
             </div>
-            
             <div class="hero-visual-shop">
                 <div class="glow-orb-shop" id="visual-glow"></div>
                 <div class="phone-frame-3d" id="main-phone-view">
@@ -183,10 +159,62 @@
                 </div>
             </div>
         </section>
-
-        <!-- Витрина смартфонов -->
         <section class="products-section-shop">
             <h2 class="section-title-shop">Выберите свой флагман</h2>
             <div class="products-grid-shop">
-                
                 <div class="product-card-shop" data-name="Cyber X-Pro" data-price="99900" data-color="#39ff14" data-desc="Титановый корпус с молекулярным напылением, квантовый чип нейросетей Core-Q1 и дисплей без границ Infinite AMOLED 144Hz.">
+                    <div class="card-glow-shop neon-green-shop"></div>
+                    <div class="card-phone-preview-shop color-green-shop"></div>
+                    <h3>Cyber X-Pro</h3>
+                    <p>Neon Titanium / 512GB</p>
+                    <div class="card-footer-shop">
+                        <span class="price-shop">99 900 ₽</span>
+                        <button class="add-to-cart-btn-shop">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-card-shop" data-name="Nova Nebula" data-price="114900" data-color="#a259ff" data-desc="Фантастический градиент задней панели Aurora Glass, ультра-камера 200Мп с ИИ-стабилизацией и беспроводная зарядка 100W.">
+                    <div class="card-glow-shop neon-purple-shop"></div>
+                    <div class="card-phone-preview-shop color-purple-shop"></div>
+                    <h3>Nova Nebula</h3>
+                    <p>Cosmic Purple / 1TB</p>
+                    <div class="card-footer-shop">
+                        <span class="price-shop">114 900 ₽</span>
+                        <button class="add-to-cart-btn-shop">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-card-shop" data-name="Solar Flare" data-price="89900" data-color="#ff5f56" data-desc="Экстремальная защита корпуса по стандарту IP69K, встроенный спутниковый модуль связи и сверхъяркий экран для работы под солнцем.">
+                    <div class="card-glow-shop neon-red-shop"></div>
+                    <div class="card-phone-preview-shop color-red-shop"></div>
+                    <h3>Solar Flare</h3>
+                    <p>Inferno Amber / 256GB</p>
+                    <div class="card-footer-shop">
+                        <span class="price-shop">89 900 ₽</span>
+                        <button class="add-to-cart-btn-shop">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="cart-overlay" id="cart-overlay">
+            <div class="cart-sidebar">
+                <div class="cart-header">
+                    <h2>Ваш заказ</h2>
+                    <button id="cart-close">×</button>
+                </div>
+                <div class="cart-items-list" id="cart-items">
+                    <p class="empty-message">Корзина пуста. Время для апгрейда!</p>
+                </div>
+                <div class="cart-summary-shop">
+                    <div class="total-row-shop">
+                        <span>Итого:</span>
+                        <span id="cart-total-price">0 ₽</span>
+                    </div>
+                    <button class="checkout-btn-shop">Оформить покупку</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
