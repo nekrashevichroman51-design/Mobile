@@ -1,4 +1,3 @@
-```javascript
 document.addEventListener("DOMContentLoaded", () => {
     
     // ==========================================
@@ -55,7 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
     addLogLine();
-
     const searchBtn = document.getElementById("search-btn");
     const placeholder = document.getElementById("search-placeholder");
     const resultsWrapper = document.getElementById("results-wrapper");
@@ -83,7 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-
     // ==========================================
     // СВЯЗУЮЩАЯ ЛОГИКА: ПЕРЕКЛЮЧЕНИЕ МЕЖДУ САЙТАМИ
     // ==========================================
@@ -92,7 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const openShopLink = document.getElementById("open-shop-link");
     const backToPortfolioBtn = document.getElementById("back-to-portfolio");
 
-    // Включение магазина смартфонов
     openShopLink.addEventListener("click", (e) => {
         e.preventDefault();
         googlePage.style.display = "none";
@@ -101,14 +97,11 @@ document.addEventListener("DOMContentLoaded", () => {
         addLogLine("[ACTION] Открыто интерактивное демо 'PHONIC SHOP'.");
     });
 
-    // Возврат к поисковику Google
     backToPortfolioBtn.addEventListener("click", () => {
         shopPage.style.display = "none";
         googlePage.style.display = "flex";
         addLogLine("[ACTION] Возврат в главное меню портфолио.");
     });
-
-
     // ==========================================
     // ЛОГИКА ЧАСТИ 2: ИНТЕРНЕТ-МАГАЗИН СМАРТФОНОВ
     // ==========================================
